@@ -14,7 +14,7 @@ services:
     archivebox:
         # build: .                              # for developers working on archivebox
         image: archivebox/archivebox:master
-        command: server --quick-init 192.168.86.101:8000
+        command: server --quick-init 0.0.0.0:8000
         ports:
             - 8000:8000
         environment:
