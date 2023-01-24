@@ -26,8 +26,11 @@ services:
         # dns:                                  # uncomment to use pihole below for ad/tracker blocking during archiving
             # - pihole
         volumes:
-            - ./data:/data
+            - archivebox-data:/data
+            # - ./data:/data
             # - ./archivebox:/app/archivebox    # for developers working on archivebox
+volumes:
+    archivebox-data:
 
 
     ### Optional Addons: tweak these examples as needed for your specific use case
